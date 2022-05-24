@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2022.
+ * Florian Plesker
+ * florian.plesker@web.de
+ */
+
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/1.0/config/configuration-file.html
 

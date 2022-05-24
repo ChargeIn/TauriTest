@@ -1,0 +1,19 @@
+<!--
+  ~ Copyright (c) 2022.
+  ~ Florian Plesker
+  ~ florian.plesker@web.de
+  -->
+<div class="h-full w-full overflow-auto" [style]="'background: white;'">
+    <div [style.height.px]="screenHeight" class="p-3" (scroll)="onScroll($event)" (wheel)="onWheel($event)">
+        <div class="absolute inset-0" [style.top.px]="drawTop">
+            <div *ngFor="let node of drawnNodes; index as index">
+                <div [style.padding-left.px]="node.level_offset"
+                     (click)="onNodeClick(node, index); $event.stopPropagation()">
+                    <mat-icon [svgIcon]="node.prefix_icon"></mat-icon>
+                    <mat-icon [svgIcon]="node.icon"></mat-icon>
+                    {{node.name}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

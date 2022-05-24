@@ -1,3 +1,15 @@
+/*
+ * Copyright (c) 2022.
+ * Florian Plesker
+ * florian.plesker@web.de
+ */
+
+/*
+ * Copyright (c) 2022.
+ * Florian Plesker
+ * florian.plesker@web.de
+ */
+
 // This file is required by karma.conf.js and loads recursively all the .spec and framework files
 
 import 'zone.js/testing';
